@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprint - CLIMATE-WISE Exercise PROJECT</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .btn-primary {
+            background-color: #c1121f;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #780000;
+        }
+        .lang-content {
+            display: none;
+        }
+        .lang-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-black bg-opacity-20 py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center">
+                    <img src="heatbeat_logo.jpg" alt="HeatBeat Logo" class="h-20 md:h-32 w-auto -mr-4">
+                    <span class="text-white text-xl md:text-2xl font-bold">HeatBeat</span>
+                </a>
+                <a href="index.html" class="btn-primary px-4 py-2 rounded-full">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-sm p-8">
+            <!-- Language Toggle -->
+            <div class="flex justify-end mb-6">
+                <div class="inline-flex rounded-md shadow-sm" role="group">
+                    <button type="button" onclick="toggleLanguage('en')" 
+                            class="lang-btn px-4 py-2 text-sm font-medium rounded-l-lg bg-white border border-gray-200 hover:bg-gray-100 hover:text-[#c1121f] focus:z-10 focus:ring-2 focus:ring-[#c1121f] active:bg-gray-100" 
+                            id="en-btn">
+                        English
+                    </button>
+                    <button type="button" onclick="toggleLanguage('de')" 
+                            class="lang-btn px-4 py-2 text-sm font-medium rounded-r-lg bg-white border border-l-0 border-gray-200 hover:bg-gray-100 hover:text-[#c1121f] focus:z-10 focus:ring-2 focus:ring-[#c1121f] active:bg-gray-100"
+                            id="de-btn">
+                        Deutsch
+                    </button>
+                </div>
+            </div>
+
+            <!-- English Content -->
+            <div id="en-content" class="lang-content active">
+                <h1 class="text-3xl font-bold mb-8 text-gray-800">Imprint</h1>
+                <div class="mb-8">
+                    <p class="mb-4 text-gray-600">
+                        Ludwig Boltzmann Institute for Digital Health and Prevention<br>
+                        Legally dependent institution of the Ludwig Boltzmann Society<br>
+                        Lindhofstr. 22<br>
+                        5020 Salzburg<br>
+                        Austria<br>
+                        Tel. +43 5 7255 82701<br>
+                        office@dhp.lbg.ac.at
+                    </p>
+                </div>
+
+                <div class="mb-8">
+                    <p class="font-semibold mb-4">A website of the</p>
+                    <p class="mb-4 text-gray-600">
+                        Ludwig Boltzmann Society – Austrian Association for the Promotion of Scientific Research<br><br>
+                        Nußdorfer Straße 64,<br>
+                        6th floor<br>
+                        1090 Vienna, Austria<br>
+                        Tel. +43 1 513 27 50<br>
+                        office@lbg.ac.at<br>
+                        <a href="https://lbg.ac.at" class="text-blue-600 hover:underline">https://lbg.ac.at</a><br>
+                        ZVR number: 875209001<br>
+                        UID: ATU 37866608
+                    </p>
+                </div>
+
+                <div class="space-y-4 text-gray-600">
+                    <p>The purpose of the society is to promote and conduct basic research, applied and translational research as well as the training and further education of scientists.</p>
+                    
+                    <p>The website and the term "Ludwig Boltzmann Society" include the association "Ludwig Boltzmann Society – Austrian Association for the Promotion of Scientific Research" with its Ludwig Boltzmann Institutes and its research group. The association is a non-profit research institution. The institutes and the research group are largely independent in organizational terms and do not have their own legal personality.</p>
+                    
+                    <p>This website provides information about the research work of the Ludwig Boltzmann Society. No liability is assumed for the accuracy and completeness of the research results presented. No legal claims of any kind can be derived from the content.</p>
+                    
+                    <p>Texts, images and graphics are protected by copyright and other protective laws, unless otherwise stated.</p>
+                    
+                    <p>Despite checking the content, we assume no liability for the content of external links. The operators of the linked pages are solely responsible for their content.</p>
+                </div>
+            </div>
+
+            <!-- German Content -->
+            <div id="de-content" class="lang-content">
+                <h1 class="text-3xl font-bold mb-8 text-gray-800">Impressum</h1>
+                <div class="mb-8">
+                    <p class="mb-4 text-gray-600">
+                        Ludwig Boltzmann Institut für digitale Gesundheit und Prävention<br>
+                        Rechtlich unselbstständige Einrichtung der Ludwig Boltzmann Gesellschaft<br>
+                        Lindhofstr. 22<br>
+                        5020 Salzburg<br>
+                        Österreich<br>
+                        Tel. +43 (0) 5 7255 82701<br>
+                        office@dhp.lbg.ac.at
+                    </p>
+                </div>
+
+                <div class="mb-8">
+                    <p class="font-semibold mb-4">Eine Webseite der</p>
+                    <p class="mb-4 text-gray-600">
+                        Ludwig Boltzmann Gesellschaft – Österreichische Vereinigung zur Förderung der wissenschaftlichen Forschung<br><br>
+                        Nußdorfer Straße 64,<br>
+                        6. Stock<br>
+                        1090 Wien, Österreich<br>
+                        Tel. +43 1 513 27 50<br>
+                        office@lbg.ac.at<br>
+                        <a href="https://lbg.ac.at" class="text-blue-600 hover:underline">https://lbg.ac.at</a><br>
+                        ZVR-Zahl: 875209001<br>
+                        UID: ATU 37866608
+                    </p>
+                </div>
+
+                <div class="space-y-4 text-gray-600">
+                    <p>Zweck der Gesellschaft ist die Förderung und Durchführung von Grundlagenforschung, angewandter und translationaler Forschung sowie die Aus- und Fortbildung von Wissenschaftler:innen.</p>
+                    
+                    <p>Die Website und der Begriff "Ludwig Boltzmann Gesellschaft" umfassen den Verein "Ludwig Boltzmann Gesellschaft – Österreichische Vereinigung zur Förderung der wissenschaftlichen Forschung" mit seinen Ludwig Boltzmann Instituten sowie seiner Forschungsgruppe. Der Verein ist eine gemeinnützige Forschungseinrichtung. Die Institute und die Forschungsgruppe sind organisatorisch weitgehend selbständig und haben keine eigene Rechtspersönlichkeit.</p>
+                    
+                    <p>Diese Website dient zur Information über die Forschungsarbeit der Ludwig Boltzmann Gesellschaft. Eine Haftung für Richtigkeit und Vollständigkeit der dargestellten Forschungsergebnisse wird nicht übernommen. Aus dem Inhalt können keine wie immer gearteten rechtlichen Ansprüche abgeleitet werden.</p>
+                    
+                    <p>Texte, Bilder und Grafiken unterliegen dem Schutz des Urheberrechts und anderer Schutzgesetze, soweit nicht anders angegeben.</p>
+                    
+                    <p>Trotz inhaltlicher Prüfung übernehmen wir keine Haftung für die Inhalte der externen Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-20 py-4 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4 text-sm text-white">
+                <span>© 2025</span>
+                <a href="imprint.html" 
+                   class="hover:text-[#c1121f] transition-colors">Imprint</a>
+                <a href="data_protection.html" 
+                   class="hover:text-[#c1121f] transition-colors">Data Protection</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleLanguage(lang) {
+            // Hide all language content
+            document.querySelectorAll('.lang-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show selected language content
+            document.getElementById(`${lang}-content`).classList.add('active');
+            
+            // Update button styles
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('bg-gray-100', 'text-[#c1121f]');
+            });
+            document.getElementById(`${lang}-btn`).classList.add('bg-gray-100', 'text-[#c1121f]');
+        }
+    </script>
+</body>
+</html> 

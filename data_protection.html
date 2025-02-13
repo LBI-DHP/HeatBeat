@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Protection - CLIMATE-WISE Exercise PROJECT</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .btn-primary {
+            background-color: #c1121f;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #780000;
+        }
+        .lang-content {
+            display: none;
+        }
+        .lang-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-black bg-opacity-20 py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center">
+                    <img src="heatbeat_logo.jpg" alt="HeatBeat Logo" class="h-20 md:h-32 w-auto -mr-4">
+                    <span class="text-white text-xl md:text-2xl font-bold">HeatBeat</span>
+                </a>
+                <a href="index.html" class="btn-primary px-4 py-2 rounded-full">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-sm p-8">
+            <!-- Language Toggle -->
+            <div class="flex justify-end mb-6">
+                <div class="inline-flex rounded-md shadow-sm" role="group">
+                    <button type="button" onclick="toggleLanguage('en')" 
+                            class="lang-btn px-4 py-2 text-sm font-medium rounded-l-lg bg-white border border-gray-200 hover:bg-gray-100 hover:text-[#c1121f] focus:z-10 focus:ring-2 focus:ring-[#c1121f] active:bg-gray-100" 
+                            id="en-btn">
+                        English
+                    </button>
+                    <button type="button" onclick="toggleLanguage('de')" 
+                            class="lang-btn px-4 py-2 text-sm font-medium rounded-r-lg bg-white border border-l-0 border-gray-200 hover:bg-gray-100 hover:text-[#c1121f] focus:z-10 focus:ring-2 focus:ring-[#c1121f] active:bg-gray-100"
+                            id="de-btn">
+                        Deutsch
+                    </button>
+                </div>
+            </div>
+
+            <!-- English Content -->
+            <div id="en-content" class="lang-content active">
+                <h1 class="text-3xl font-bold mb-8 text-gray-800">Privacy Statement</h1>
+                
+                <div class="space-y-6 text-gray-600">
+                    <p>
+                        The protection of your personal data is of the utmost importance to us. We will thus only process your data in compliance with the pertinent legal provisions (<a href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001597" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">GDPR</a>, <a href="https://ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20011678" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">2021 Austrian Telecommunications Act (Telekommunikationsgesetz, TKG)</a>). This Privacy Statement informs you about the most important aspects of data processing within our website.
+                    </p>
+
+                    <section>
+                        <h2 class="text-xl font-semibold mb-3 text-gray-700">What are personal data?</h2>
+                        <p>
+                            Personal data are any information concerning a natural person. It is essential that, as soon as a natural person can be identified based on data (for example by reference to a user identifier), such data are considered personal data. Your personal data include, among others, your name, your address, your phone number or your date of birth. Statistical information that cannot be linked to you, neither directly nor indirectly (such as the popularity of individual websites that we offer or the number of users per site) is not considered personal data.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold mb-3 text-gray-700">Who is responsible for collecting and processing your personal data?</h2>
+                        <p>
+                            Ludwig Boltzmann Gesellschaft is responsible for collecting and processing your data. If you have any questions or suggestions, do not hesitate to contact us:
+                        </p>
+                        <div class="mt-3 ml-4">
+                            <p>Ludwig Boltzmann Gesellschaft<br>
+                            Nussdorfer Strasse 64<br>
+                            1090 Vienna, Austria<br>
+                            office@lbg.ac.at</p>
+                            <p class="mt-4">LBG's data protection officer<br>
+                            Bernd M. Schauer<br>
+                            dsba@lbg.ac.at</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold mb-3 text-gray-700">Server log files</h2>
+                        <p>
+                            In order to optimise the website's system performance, user friendliness and provision of useful information about our services, the website provider automatically collects and stores information in so-called server log files that will then automatically be transferred to us by your browser. This information includes your Internet protocol address (IP address), browser and language settings, operating system, referrer URL, your Internet service provider, as well as date/time. These data are not merged with any personal data sources. If there is specific indication which gives rise to suspicions of illegal use, we reserve the right to review the data.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold mb-3 text-gray-700">Storage period</h2>
+                        <p>
+                            We generally store personal data only for as long as we need them to fulfil the above stated purposes or to conform to contractual or statutory obligations. We delete personal data that we no longer need from our systems or anonymise them to make sure that website users can no longer be identified.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold mb-3 text-gray-700">Transfer of data</h2>
+                        <p>
+                            In general, personal data collected in the course of website use will not be transferred to any third parties, unless such a transfer is required for us to be able to fulfil our duties or comply with statutory/official obligations.
+                        </p>
+                        <p class="mt-3">
+                            Personal data may also be processed by our service providers on our behalf. Processors include in particular IT service providers or providers of any other Internet and software solutions that are required for the operation of our website. All our processors generally only process data on our behalf and according to our instructions for the above purposes.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold mb-3 text-gray-700">Your rights</h2>
+                        <p>
+                            You have the right to access to, rectification and erasure of personal data, the right to data portability, the right to withdraw your consent and the right to object. If you believe that the processing of your data is in violation of applicable data privacy law or that your data privacy rights are violated in any other way, you may lodge a complaint with the Austrian data protection agency:
+                        </p>
+                        <div class="mt-3 ml-4">
+                            <p>Österreichische Datenschutzbehörde (Austrian Data Protection Agency)<br>
+                            Barichgasse 40-42<br>
+                            1030 Vienna, Austria<br>
+                            Phone: +43 1 52 152-0<br>
+                            Email: dsb@dsb.gv.at</p>
+                        </div>
+                    </section>
+
+                    <p class="mt-8 text-sm italic">
+                        Please note that this privacy statement may be adapted due to legal or effective requirements.
+                    </p>
+                </div>
+            </div>
+
+            <!-- German Content -->
+            <div id="de-content" class="lang-content">
+                <h1 class="text-3xl font-bold mb-8 text-gray-800">Datenschutzerklärung</h1>
+                
+                <div class="space-y-6 text-gray-600">
+                    <p>
+                        Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (<a href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001597" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">DSGVO</a>, <a href="https://ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20011678" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">TKG 2021</a>). In dieser Datenschutzerklärung informieren wir Sie über die wichtigsten Aspekte der Datenverarbeitung im Rahmen unseres Webauftritts.
+                    </p>
+
+                    <section>
+                        <h2 class="text-xl font-semibold mb-3 text-gray-700">Was sind personenbezogene Daten?</h2>
+                        <p>
+                            Personenbezogene Daten sind alle Informationen, die sich auf eine natürliche Person beziehen. Wesentlich ist dabei, dass es sich bereits um personenbezogene Daten handelt, sobald diese natürliche Person auf Basis der Daten identifiziert werden kann (u.a. durch Zuordnung einer Benutzerkennung). Zu personenbezogenen Daten zählen bspw. Ihr Name, Ihre Anschrift, Ihre Telefonnummer oder Ihr Geburtsdatum. Bei statistischen Informationen, die mit Ihnen weder direkt noch indirekt in Verbindung gebracht werden können (wie z. B. die Beliebtheit einzelner Webseiten unseres Angebots oder die Anzahl der Nutzer einer Seite) handelt es sich nicht um personenbezogene Daten.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold mb-3 text-gray-700">Wer ist die verantwortliche Stelle für die Erhebung und Verarbeitung Ihrer personenbezogenen Daten?</h2>
+                        <p>
+                            Die Ludwig Boltzmann Gesellschaft erhebt und verarbeitet Ihre Daten als verantwortliche Stelle. Für Fragen und Anregungen können Sie sich gerne an uns wenden:
+                        </p>
+                        <div class="mt-3 ml-4">
+                            <p>Ludwig Boltzmann Gesellschaft<br>
+                            Nußdorfer Straße 64<br>
+                            1090 Wien<br>
+                            office@lbg.ac.at</p>
+                            <p class="mt-4">LBG Datenschutzbeauftragter<br>
+                            Mag. Dr. Bernd M. Schauer<br>
+                            dsba@lbg.ac.at</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold mb-3 text-gray-700">Server-Log-Files</h2>
+                        <p>
+                            Zur Optimierung dieser Website in Bezug auf die System-Performance, Benutzerfreundlichkeit und Bereitstellung von nützlichen Informationen über unsere Dienstleistungen erhebt und speichert der Provider der Website automatisch Informationen in so genannten Server-Log-Files, die Ihr Browser automatisch an uns übermittelt. Davon umfasst sind Ihre Internet-Protokoll Adresse (IP-Adresse), Browser und Spracheinstellung, Betriebssystem, Referer-URL, Ihr Internet-Service-Provider und Datum/Uhrzeit. Eine Zusammenführung dieser Daten mit personenbezogenen Datenquellen wird nicht vorgenommen. Wir behalten uns vor, diese Daten nachträglich zu prüfen, wenn uns konkrete Anhaltspunkte für eine rechtswidrige Nutzung bekannt werden.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold mb-3 text-gray-700">Speicherdauer</h2>
+                        <p>
+                            Wir speichern personenbezogene Daten grundsätzlich nur so lange, wie wir sie für die Erfüllung der oben dargestellten Zwecke bzw. aufgrund unserer vertraglichen bzw. gesetzlichen Verpflichtungen benötigen. Wenn personenbezogene Daten nicht länger benötigt werden, löschen wir diese von unseren Systemen oder anonymisieren diese, damit Website-Besucher nicht mehr identifiziert werden können.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold mb-3 text-gray-700">Weitergabe von Daten</h2>
+                        <p>
+                            Bei der Nutzung der Website erhobene personenbezogene Daten werden von uns grundsätzlich nicht an Dritte weitergegeben, es sei denn, es ist zur Erfüllung unserer Pflichten erforderlich oder gesetzlich/behördlich verpflichtend.
+                        </p>
+                        <p class="mt-3">
+                            Personenbezogene Daten können in unserem Auftrag auch von unseren Dienstleistern verarbeitet werden. Auftragsverarbeiter sind insbesondere IT-Dienstleister oder Anbieter von sonstigen Internet- und Softwarelösungen, die wir für den Betrieb der Website benötigen. Alle unsere Auftragsverarbeiter verarbeiten grundsätzlich Daten nur in unserem Auftrag und auf Basis unserer Weisungen für unsere oben dargestellten Zwecke.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold mb-3 text-gray-700">Ihre Rechte</h2>
+                        <p>
+                            Ihnen steht das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen geltendes Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt werden, können Sie bei der österreichischen Datenschutzbehörde Beschwerde führen:
+                        </p>
+                        <div class="mt-3 ml-4">
+                            <p>Österreichische Datenschutzbehörde<br>
+                            Barichgasse 40-42<br>
+                            1030 Wien<br>
+                            Telefon: +43 1 52 152-0<br>
+                            E-Mail: dsb@dsb.gv.at</p>
+                        </div>
+                    </section>
+
+                    <p class="mt-8 text-sm italic">
+                        Bitte beachten Sie, dass es aufgrund rechtlicher oder tatsächlicher Erfordernisse zu Anpassungen dieser Datenschutzerklärung kommen kann.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-20 py-4 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4 text-sm text-white">
+                <span>© 2025</span>
+                <a href="imprint.html" 
+                   class="hover:text-[#c1121f] transition-colors">Imprint</a>
+                <a href="data_protection.html" 
+                   class="hover:text-[#c1121f] transition-colors">Data Protection</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleLanguage(lang) {
+            // Hide all language content
+            document.querySelectorAll('.lang-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show selected language content
+            document.getElementById(`${lang}-content`).classList.add('active');
+            
+            // Update button styles
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('bg-gray-100', 'text-[#c1121f]');
+            });
+            document.getElementById(`${lang}-btn`).classList.add('bg-gray-100', 'text-[#c1121f]');
+        }
+    </script>
+</body>
+</html> 
