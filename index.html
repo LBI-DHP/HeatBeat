@@ -304,7 +304,7 @@
                     <div>
                         <h3 class="text-2xl font-bold mb-4 text-[#c1121f]">Our Research</h3>
                         <p class="text-gray-700 text-justify">
-                            The HeatBeat project, a collaboration between the <a href="https://dhp.lbg.ac.at/?lang=en" target="_blank" class="text-blue-600 hover:underline">Ludwig Boltzmann Institute for Digital Health and Prevention (LBI-DHP)</a>, <a href="https://www.pmu.ac.at/?lang=en" target="_blank" class="text-blue-600 hover:underline">Paracelsus Medical University</a>, and the <a href="https://www.plus.ac.at/?lang=en" target="_blank" class="text-blue-600 hover:underline">Paris Lodron University Salzburg (PLUS) - Mobility Lab</a>, studies how environmental heat affects exercise performance. We combine multiple aspects of exercise science: physiological monitoring, environmental factors, and contextual elements. Our research focuses on real-world exercise situations, not just laboratory conditions, because we know that's where the real challenge lies.
+                            The HeatBeat project, a collaboration between the <a href="https://dhp.lbg.ac.at/?lang=en" target="_blank" class="text-blue-600 hover:underline">Ludwig Boltzmann Institute for Digital Health and Prevention (LBI-DHP)</a>, <a href="https://www.pmu.ac.at/?lang=en" target="_blank" class="text-blue-600 hover:underline">Paracelsus Medical University (PMU)</a>, and the <a href="https://www.plus.ac.at/?lang=en" target="_blank" class="text-blue-600 hover:underline">Paris Lodron University Salzburg (PLUS) - Mobility Lab</a>, studies how environmental heat affects exercise performance. We combine multiple aspects of exercise science: physiological monitoring, environmental factors, and contextual elements. Our research focuses on real-world exercise situations, not just laboratory conditions, because we know that's where the real challenge lies. In addition to this project, LBI DHP, PLUS, and PMU collaborate on other climate change-related research initiatives, such as <a href="https://www.trafficon.eu/projekte/klimafit-forschungsprojekt-zu-hitzeresilienz/" target="_blank" class="text-blue-600 hover:underline">KlimaFIT</a>.
                         </p>
                     </div>
                     <div>
@@ -348,6 +348,19 @@
                             <img src="pmu_logo.png" 
                                  alt="Paracelsus Medical University Logo" 
                                  class="h-48 w-auto object-contain mx-auto">
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-gray-700 text-lg font-semibold mb-4">
+                        Powered by
+                    </p>
+                    <div class="flex justify-center">
+                        <a href="https://www.garmin.com/health" target="_blank"
+                           class="transform hover:scale-105 transition-transform duration-300">
+                            <img src="garminhealth_logo.png" 
+                                 alt="Garmin Health Logo" 
+                                 class="h-20 w-auto object-contain mx-auto">
                         </a>
                     </div>
                 </div>
@@ -483,12 +496,14 @@
             
             <!-- Copyright section -->
             <div class="py-1">
-                <div class="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4 text-sm text-white">
-                    <span> 2025</span>
-                    <a href="imprint.html" 
-                       class="hover:text-[#c1121f] transition-colors">Imprint</a>
-                    <a href="data_protection.html" 
-                       class="hover:text-[#c1121f] transition-colors">Data Protection</a>
+                <div class="flex flex-col justify-center items-center space-y-2 text-sm text-white">
+                    <span>2025 Ludwig Boltzmann Institute for Digital Health and Prevention. All Rights Reserved.</span>
+                    <div class="flex space-x-4">
+                        <a href="imprint.html" 
+                           class="hover:text-[#c1121f] transition-colors">Imprint</a>
+                        <a href="data_protection.html" 
+                           class="hover:text-[#c1121f] transition-colors">Data Protection</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -527,6 +542,12 @@
                     <label for="garmin" class="block text-gray-700 mb-2">Garmin Watch Model *</label>
                     <input type="text" id="garmin" name="garmin" required
                         class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#c1121f]">
+                </div>
+                <div>
+                    <label for="activity" class="block text-gray-700 mb-2">How many minutes of outdoor physical activity do you typically do per week? *</label>
+                    <input type="number" id="activity" name="activity" min="0" required
+                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#c1121f]"
+                        placeholder="Enter minutes per week">
                 </div>
                 <div>
                     <label class="block text-gray-700 mb-2">Do you have a smartphone? *</label>
@@ -695,6 +716,7 @@
                         age: form.age.value,
                         country: form.country.value,
                         garmin: form.garmin.value,
+                        activity: form.activity.value,
                         smartphone: form.smartphone.value,
                         english: form.english.value,
                         participate: form.participate.value,
